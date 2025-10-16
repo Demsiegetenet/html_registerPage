@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Registration Form</h2>
+        <form>
+            <label for="username">Full Name</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+
+            <label for="date">Date of Birth</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="gender">Gender</label>
+            <div id="gender">
+                <label for="male">
+                <input type="radio" id="male" name="gender" value="male">
+              Male</label>
+                <label for="female">
+                <input type="radio" id="female" name="gender" value="female">
+              Female</label>
+                <label for="other">
+                <input type="radio" id="other" name="gender" value="other">
+                    Other</label>
+            </div>
+
+            <label for="course">Course</label>
+            <select id="course" name="course" required>
+                <option value="">Select Course</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="csharp">C#</option>
+            </select>
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="4" placeholder="Enter your address here..." required></textarea>
+           
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
